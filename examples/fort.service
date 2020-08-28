@@ -1,0 +1,12 @@
+[Unit]
+Description=FORT Validator - a RPKI Validator and RTR Server
+Wants=network.target
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/fort -f /etc/fort/config.json
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
