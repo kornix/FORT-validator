@@ -1,0 +1,12 @@
+/var/log/fort/*log {
+    create 0664 root root
+    daily
+    rotate 31
+    missingok
+    notifempty
+    compress
+    delaycompress
+    dateext
+    dateyesterday
+    sharedscripts
+}
