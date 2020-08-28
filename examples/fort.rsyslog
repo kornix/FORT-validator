@@ -1,0 +1,2 @@
+local6.*        /var/log/fort/fort.log
+local7.*        /var/log/fort/validation.log
